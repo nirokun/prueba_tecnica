@@ -1,41 +1,38 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
- 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Servicios</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Más</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Opción 1</a>
-              <a class="dropdown-item" href="#">Opción 2</a>
-              <a class="dropdown-item" href="#">Opción 3</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Buscar" required>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-        </form>
+  <a class="navbar-brand" href="#">Index</a>
+</nav>
+
+<main class="container" role="main">
+  <div class="jumbotron">
+    <h1>Ingrese los datos de la factura</h1>
+    <form>
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="rutEmisor">Rut Emisor</label>
+          <input type="text" class="form-control" id="rutEmisor" placeholder="11111111-1">
+        </div>
+        <div class="form-group col">
+          <label for="rutDeudor">Rut Deudor</label>
+          <input type="text" class="form-control" id="rutDeudor" placeholder="11111111-1">
+        </div>
       </div>
-    </nav>
- 
-    <main class="container" role="main">
-      <div class="jumbotron">
-        <h1>Nube Colectiva</h1>
-        <p class="lead">Bienvenido</p>
-        <a class="btn btn-lg btn-primary" href="https://blog.nubecolectiva.com" target="_blank" role="button">Blog &raquo;</a></div><div class="container"></div><p class="lead">Compartimos tutoriales sobre:</p><div class="row"><div class="col-md-4"><h2>Frontend</h2><p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.<a href="https://blog.nubecolectiva.com/category/frontend/" target="_blank"><img class="img-fluid mt-3" src="https://blog.nubecolectiva.com/wp-content/uploads/2018/11/img_destacada_blog_devs-11-300x169.png"></a></p></div><div class="col-md-4"><h2>Backend</h2><p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.<a href="https://blog.nubecolectiva.com/category/backend/" target="_blank"><img class="img-fluid mt-2" src="https://blog.nubecolectiva.com/wp-content/uploads/2018/11/img_destacada_blog_devs-8-300x169.png"></a></p></div><div class="col-md-4"><h2>Android</h2><p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.<a href="https://blog.nubecolectiva.com/category/android/" target="_blank"><img class="img-fluid mt-2" src="https://blog.nubecolectiva.com/wp-content/uploads/2018/11/img_destacada_blog_devs-9-300x169.png"></a></p></div></div><hr></main>
-    <footer></footer><div class="container"><div align="center">Desarrollado por <a href="https://www.nubecolectiva.com" target="_blank">Nube Colectiva</a></div></div>
- 
-    <br><br>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="monto">Monto</label>
+          <input type="number" class="form-control" id="monto">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="folio">Folio</label>
+          <input type="number" class="form-control" id="folio">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="fechaVencimiento">Fecha de Vencimiento</label>
+          <input type="date" class="form-control" id="fechaVencimiento">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary float-right">Enviar</button>
+    </form>
+  </div>
+  <div class="container"></div>
+</main>
+<br><br>
